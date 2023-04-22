@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Bookmarker - Homepage</title>
+</head>
+<body>
+    <header>
+        <img src="assets/images/bookmarker-logo.png" alt="Bookstore logo" id = "storeLogo">
+        <nav>
+            <div id = "navButton"><img src="assets/images/dropDownIcon.png" alt="Drop down menu icon" width="50px"></div>
+            <div class = "navBarContainer">
+                <div class = navBar>
+                    <a href="home.html" class = "button">Home</a>
+                    <a href="categoryFiction.html" class = "button">Fiction</a>
+                    <a href="categoryNonfiction.html" class = "button">Non-Fiction</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class = "categoryBox" id= "fiction">
+        <h1><strong>🚀Fiction🚀</strong></h1>
+        <div class = "bookBox">
+            <div class = "book">
+                <a href="bookDetailTemplate.html">
+                    <img src="assets/images/fiction/Fantasy/gameOfThronesCover.jpg" alt="Game of Thrones Cover" width = 200px height = 300px>
+                </a>
+                <div class = "bookInfo">
+                    A Game of Thrones by George R.R. Martin
+                </div>
+            </div>
+            <div class = "book">
+                <a href="bookDetailTemplate.html">
+                    <img src="assets/images/fiction/Horror/theShiningCover.jpg" alt="The Shining Cover" width = 200px height = 300px>
+                </a>
+                <div class = "bookInfo">
+                    The Shining by Stephen King
+                </div>
+            </div>
+            <div class = "book">
+                <a href="bookDetailTemplate.html">
+                    <img src="assets/images/fiction/Scifi/androidSheepCover.jpg" alt="Do Androids dream of Electric Sheep Cover" width = 200px height = 300px>
+                </a>
+                <div class = "bookInfo">
+                    Do Androids Dream of Electric Sheep by Phillip K. Dick
+                </div>
+            </div>
+        </div>
+        <a href="categoryFiction.html" class = "button" id = "seeMore">
+            <div>
+                See More
+            </div>
+        </a>
+    </div>
+    <div class = "categoryBox" id = "nonFiction">
+        <h1><strong>✍️Non-Fiction✍️</strong></h1>
+        <div class = "bookBox">
+            <div class = "book">
+                <a href="bookDetailTemplate.html">
+                    <img src="assets/images/Nonfiction/Biography/steveJobsCover.jpg" alt="Steve Jobs Cover" width = 200px height = 300px>
+                </a>
+                <div class = "bookInfo">
+                    Steve Jobs by Walter Isaacson
+                </div>
+            </div>
+            <div class = "book">
+                <a href="bookDetailTemplate.html">
+                    <img src="assets/images/Nonfiction/History/anneFrankCover.jpg" alt="Diary of a Young Girl Cover" width = 200px height = 300px>
+                </a>
+                <div class = "bookInfo">
+                    Diary of a Young Girl by Anne Frank
+                </div>
+            </div>
+            <div class = "book">
+                <a href="bookDetailTemplate.html">
+                    <img src="assets/images/Nonfiction/Philosophy/meditationsCover.jpg" alt="Meditations Cover" width = 200px height = 300px>
+                </a>
+                <div class = "bookInfo">
+                    Meditations by Marcus Aurelius
+                </div>
+            </div>    
+        </div>
+        <a href="categoryNonfiction.html" class = "button" id = "seeMore">
+            See More
+        </a>
+    </div>
+    <div class="categoryBox" id = "vidBox">
+        <p>Check out this audiobook of I Have No Mouth and I Must Scream voiced by the author himself Harlan Ellison</p>
+        <iframe src="https://www.youtube.com/embed/dgo-As552hY" frameborder="0"></iframe>
+    </div>
+    <footer>
+        <nav class = "navBar">
+            <a class = "button">About us</a>
+            <a class = "button">Privacy Policy</a>
+            <a class = "button">Terms</a>
+            <a class = "button">Copyright</a>
+            <a href = "contact.html" class = "button">Contact us</a>
+        </nav>
+    </footer>
+</body>
+</html>

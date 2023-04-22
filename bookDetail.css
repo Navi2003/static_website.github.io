@@ -1,0 +1,305 @@
+@media (max-width: 960px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 200px;
+    }
+
+    header{
+        height: fit-content ;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navBarContainer{
+        display: none;
+    }
+
+    #navButton:hover + .navBarContainer{
+        display: block;
+    }
+
+    .navBarContainer:hover{
+        display: block;
+    }
+
+    .navBarContainer:hover #navButton{
+        display: none;
+    }
+
+    #navButton{
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    footer{
+        justify-content: center;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageBox{
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainBookImageBox{
+        width: 60%;
+        border: 1px grey solid;
+    }
+
+    .extraImageBox{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+
+    .extraImage{
+        width: 10%;
+    }
+
+    .descriptionBox{
+        height: fit-content;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%
+    }
+
+    .extraImage:hover{
+        transform: scale(2);
+    }
+}
+
+@media (min-width: 961px){
+    .navBar{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #navButton{
+        display: none;
+    }
+    header a{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer{
+        justify-content: flex-end;
+    }
+
+    footer .navBar{
+        width: 100%;
+    }
+
+    header .button{
+        width: 100px
+    }
+    
+    .imageBox{
+        display: flex;
+        padding: 50px;
+        justify-content: space-around;
+    }
+    
+    .descriptionBox{
+        height: fit-content;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%
+    }
+    
+    .mainBookImageBox{
+        width: 40%;
+        height: 50%;
+        border: 1px grey solid;
+    }
+    
+    .extraImageBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 33%;
+    }
+
+    .extraImage{
+        height: 30%;
+    }
+
+    .priceBox{
+        width: 33%;
+    }
+    
+    .extraImage:hover{
+        transform: scale(2.5);
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: lightgrey;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-width: 615px;
+    min-height: 150px;
+    background-color: black;
+}
+
+#storeLogo{
+    width: 400px;
+    align-self: center;
+    margin-left: 25px;
+}
+
+#navButton{
+    text-align: center;
+}
+
+header nav{
+    display: flex;
+    align-items: flex-end;
+}
+
+.button{
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 20px;
+    line-height: 50px;
+    height: 49px;
+    width: 200px;
+    position: relative;
+    color: white;
+    text-decoration: none;    
+}
+
+.navBar .button::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom-right;
+    transition: transform 0.25s ease-out;
+}
+
+.navBar .button:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+footer{
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    min-width: 615px;
+    align-items: center;
+}
+
+h1{
+    margin-top: 40px;
+}
+
+.infoBox{
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    min-height: 800px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extraImage{
+    width: 40%;
+    transition: 0.5s ease-in-out;
+    border: 1px grey solid;
+}
+
+
+
+.priceBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Arial';   
+}
+
+#price{
+    color: rgb(137, 0, 0);
+}
+
+#available{
+    color: green;
+}
+
+.breadcrumb a{
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover{
+    color: blue;
+}
+#addToCart{
+    width: 200px;
+    height: 50px;
+    background-color: #1fea00;
+    color: black;
+    border: 1px grey solid;
+    border-radius: 10px ;
+}
+
+#addToCart:hover{
+    background-color: #118400;
+}
+
+.descriptionBox p{
+    text-indent: 50px;
+}
+
+.descriptionBox{
+    padding-bottom: 50px;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(assets/font/Oswald/Oswald-VariableFont_wght.ttf);
+}

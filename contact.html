@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/bookmarker-logo.png" alt="Bookstore logo" id = "storeLogo">
+        <nav>
+            <div id = "navButton"><img src="assets/images/dropDownIcon.png" alt="Drop down menu icon" width="50px"></div>
+            <div class = "navBarContainer">
+                <div class = navBar>
+                    <a href="home.html" class = "button">Home</a>
+                    <a href="categoryFiction.html" class = "button">Fiction</a>
+                    <a href="categoryNonfiction.html" class = "button">Non-Fiction</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class = "contactForm">
+        <h1>⬇️---Contact us---⬇️</h1>
+        <div class = inputGroup>
+            <label for="purpose">Contact purpose:</label>
+            <select name="purpose" id="purpose">
+                <option value="buy">I want to buy books</option>
+                <option value="sell">I want to sell books</option>
+            </select>
+        </div>
+        <div class = inputGroup>
+            <label for="name">Name: </label>
+            <input type="text" id ="name">
+        </div>
+        <div class = inputGroup>
+            <label for="email">Email:</label>
+            
+            <input type="email" id ="email">
+            
+        </div>
+        <div class = inputGroup>
+            <label for="phone">Phone number:</label>
+            <input type="text" id = "phone">
+        </div>
+        <div class = inputGroup>
+            <label for="contactPreference">Contact preference: </label>
+            <div class = "choiceGroup">
+                <div><input type="checkbox">Email</div>
+                <div><input type="checkbox">Phone</div>
+            </div>
+        </div>
+        <div class = inputGroup id ="newsletterGroup">
+            <label for="newsletter">Receive weekly newsletter?</label>
+            <div class = "choiceGroup">
+                <div><input type="radio" name="newsletter" checked> Yes </div>
+                <div><input type="radio" name="newsletter"> No </div>
+            </div>
+        </div>
+        <div class = inputGroup>
+            <label for="extraNotes">Extra notes: </label>
+            <textarea name="extraNotes" id="extraNotes"></textarea>
+        </div>
+        <div class = inputGroup id = "buttonGroup">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </div>
+    <footer>
+        <nav class = "navBar">
+            <a class = "button">About us</a>
+            <a class = "button">Privacy Policy</a>
+            <a class = "button">Terms</a>
+            <a class = "button">Copyright</a>
+            <a href = "contact.html" class = "button">Contact us</a>
+        </nav>
+    </footer>
+</body>
+</html>
