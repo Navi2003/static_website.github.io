@@ -43,40 +43,26 @@
         align-items: center;
     }
 
-    .imageBox{
+    .inputGroup{
         display: flex;
-        padding: 50px;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .mainBookImageBox{
-        width: 60%;
-        border: 1px grey solid;
-    }
-
-    .extraImageBox{
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-evenly;
         width: 80%;
+        justify-content: space-between;
+        margin-top: 20px;
     }
 
-    .extraImage{
-        width: 10%;
+    button{
+        margin-top: 10px;
+        width: 100px;
     }
 
-    .descriptionBox{
-        height: fit-content;
-        min-height: 300px;
+    #buttonGroup{
         display: flex;
-        flex-direction: column;
         align-items: center;
-        width: 80%
     }
 
-    .extraImage:hover{
-        transform: scale(2);
+    h1{
+        font-size: 25px;
     }
 }
 
@@ -112,46 +98,16 @@
     header .button{
         width: 100px
     }
-    
-    .imageBox{
+
+    .inputGroup{
         display: flex;
-        padding: 50px;
-        justify-content: space-around;
-    }
-    
-    .descriptionBox{
-        height: fit-content;
-        min-height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%
-    }
-    
-    .mainBookImageBox{
-        width: 40%;
-        height: 50%;
-        border: 1px grey solid;
-    }
-    
-    .extraImageBox{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 80%;
         justify-content: space-between;
-        width: 33%;
+        margin-top: 20px;
     }
 
-    .extraImage{
-        height: 30%;
-    }
-
-    .priceBox{
-        width: 33%;
-    }
-    
-    .extraImage:hover{
-        transform: scale(2.5);
+    h1{
+        font-size: 30px;
     }
 }
 
@@ -199,7 +155,7 @@ header nav{
     text-decoration: none;    
 }
 
-.navBar .button::after{
+.button::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -212,10 +168,11 @@ header nav{
     transition: transform 0.25s ease-out;
 }
 
-.navBar .button:hover::after{
+.button:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 
 footer{
     height: auto;
@@ -227,79 +184,54 @@ footer{
     align-items: center;
 }
 
-h1{
-    margin-top: 40px;
-}
-
-.infoBox{
-    width: 80%;
+.contactForm{
+    width: 50%;
     height: fit-content;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    min-height: 800px;
-    background-color: white;
+    border: 1px grey solid;
     border-radius: 10px;
-    border: 1px solid grey;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 20px;
+    background-color: white;
+    font-family: 'Arial';
+    padding-bottom: 50px
 }
 
-.extraImage{
-    width: 40%;
-    transition: 0.5s ease-in-out;
-    border: 1px grey solid;
-}
-
-
-
-.priceBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contactForm select, input, button{
     font-size: 25px;
-    font-family: 'Arial';   
 }
 
-#price{
-    color: rgb(137, 0, 0);
+
+
+#buttonGroup{
+    justify-content: space-evenly;
 }
 
-#available{
-    color: green;
+.choiceGroup{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.breadcrumb a{
-    color: black;
-    text-decoration: none;
+label{
+    display: flex;
+    align-items: center;
+    min-width: 200px;
 }
 
-.breadcrumb a:hover{
-    color: blue;
-}
-#addToCart{
-    width: 200px;
-    height: 50px;
-    background-color: #1fea00;
-    color: black;
-    border: 1px grey solid;
-    border-radius: 10px ;
+#name, #email, #phone, #purpose, #extraNotes{
+    width: 90%;
 }
 
-#addToCart:hover{
-    background-color: #118400;
-}
 
-.descriptionBox p{
-    text-indent: 50px;
-}
 
-.descriptionBox{
-    padding-bottom: 50px;
-}
 
 @font-face {
     font-family: Oswald;
-    src: url(assets/font/Oswald/Oswald-VariableFont_wght.ttf);
+    src: url(../assets/font/Oswald/Oswald-VariableFont_wght.ttf);
 }
+

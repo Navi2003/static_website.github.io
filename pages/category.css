@@ -175,7 +175,7 @@ footer{
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     border: 1px grey solid;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 h1{
@@ -224,5 +224,5 @@ h1{
 
 @font-face {
     font-family: Oswald;
-    src: url(assets/font/Oswald/Oswald-VariableFont_wght.ttf);
+    src: url(../assets/font/Oswald/Oswald-VariableFont_wght.ttf);
 }
