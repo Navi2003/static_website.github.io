@@ -96,7 +96,7 @@
     }
 
     header .button{
-        width: 100px
+        width: 200px
     }
 
     .inputGroup{
@@ -145,7 +145,7 @@ header nav{
 
 .button{
     text-align: center;
-    font-family: 'Oswald';
+    font-family: 'Optima';
     font-size: 20px;
     line-height: 50px;
     height: 49px;
@@ -155,7 +155,7 @@ header nav{
     text-decoration: none;    
 }
 
-.button::after{
+header .button::after, #contact::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -168,7 +168,7 @@ header nav{
     transition: transform 0.25s ease-out;
 }
 
-.button:hover::after{
+header .button:hover::after, #contact:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -227,11 +227,8 @@ label{
     width: 90%;
 }
 
-
-
-
 @font-face {
-    font-family: Oswald;
-    src: url(../assets/font/Oswald/Oswald-VariableFont_wght.ttf);
+    font-family: Optima;
+    src: url(../assets/font/optima-cufonfonts/OPTIMA.TTF);
 }
 
