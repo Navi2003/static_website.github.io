@@ -21,52 +21,54 @@
             </div>
         </nav>
     </header>
-    <div class = "contactForm">
-        <h1>⬇️---Contact us---⬇️</h1>
-        <div class = inputGroup>
-            <label for="purpose">Contact purpose:</label>
-            <select name="purpose" id="purpose">
-                <option value="buy">I want to buy books</option>
-                <option value="sell">I want to sell books</option>
-            </select>
-        </div>
-        <div class = inputGroup>
-            <label for="name">Name: </label>
-            <input type="text" id ="name">
-        </div>
-        <div class = inputGroup>
-            <label for="email">Email:</label>
-            
-            <input type="email" id ="email">
-            
-        </div>
-        <div class = inputGroup>
-            <label for="phone">Phone number:</label>
-            <input type="text" id = "phone">
-        </div>
-        <div class = inputGroup>
-            <label for="contactPreference">Contact preference: </label>
-            <div class = "choiceGroup">
-                <div><input type="checkbox">Email</div>
-                <div><input type="checkbox">Phone</div>
+    <main>
+        <div class = "contactForm">
+            <h1>⬇️---Contact us---⬇️</h1>
+            <div class = inputGroup>
+                <label for="purpose">Contact purpose:</label>
+                <select name="purpose" id="purpose">
+                    <option value="buy">I want to buy books</option>
+                    <option value="sell">I want to sell books</option>
+                </select>
+            </div>
+            <div class = inputGroup>
+                <label for="name">Name: </label>
+                <input type="text" id ="name">
+            </div>
+            <div class = inputGroup>
+                <label for="email">Email:</label>
+                
+                <input type="email" id ="email">
+                
+            </div>
+            <div class = inputGroup>
+                <label for="phone">Phone number:</label>
+                <input type="text" id = "phone">
+            </div>
+            <div class = inputGroup>
+                <label for="contactPreference">Contact preference: </label>
+                <div class = "choiceGroup">
+                    <div><input type="checkbox">Email</div>
+                    <div><input type="checkbox">Phone</div>
+                </div>
+            </div>
+            <div class = inputGroup id ="newsletterGroup">
+                <label for="newsletter">Receive weekly newsletter?</label>
+                <div class = "choiceGroup">
+                    <div><input type="radio" name="newsletter" checked> Yes </div>
+                    <div><input type="radio" name="newsletter"> No </div>
+                </div>
+            </div>
+            <div class = inputGroup>
+                <label for="extraNotes">Extra notes: </label>
+                <textarea name="extraNotes" id="extraNotes"></textarea>
+            </div>
+            <div class = inputGroup id = "buttonGroup">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
             </div>
         </div>
-        <div class = inputGroup id ="newsletterGroup">
-            <label for="newsletter">Receive weekly newsletter?</label>
-            <div class = "choiceGroup">
-                <div><input type="radio" name="newsletter" checked> Yes </div>
-                <div><input type="radio" name="newsletter"> No </div>
-            </div>
-        </div>
-        <div class = inputGroup>
-            <label for="extraNotes">Extra notes: </label>
-            <textarea name="extraNotes" id="extraNotes"></textarea>
-        </div>
-        <div class = inputGroup id = "buttonGroup">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </div>
-    </div>
+    </main>
     <footer>
         <nav class = "navBar">
             <a class = "button">About us</a>
