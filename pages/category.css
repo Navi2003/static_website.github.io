@@ -177,6 +177,7 @@ footer{
     /* min-width: 768px; */
     background-color: white;
     padding-top: 30px;
+    padding-bottom: 50px;
     margin: 100px 100px 0px 100px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
